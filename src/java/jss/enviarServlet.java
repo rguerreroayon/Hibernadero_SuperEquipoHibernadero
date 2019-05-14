@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -50,6 +51,9 @@ public class enviarServlet extends HttpServlet {
         String alerta = request.getParameter("alerta");
         run(null);
         enviar(modelo+","+tipo+","+intervalo+","+alerta);
+        
+        RequestDispatcher rd = request.getRequestDispatcher("pagfin.html");
+        rd.forward(request, response);
         
     }
     

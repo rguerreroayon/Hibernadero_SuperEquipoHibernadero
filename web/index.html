@@ -6,29 +6,22 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src='enviar.js'> </script>
+        <title>Sensor invernader demo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     </head>
     <body>
-        <h1> Registrar Sensor </h1>
-        <form  action="enviarServlet">
-            <p>Modelo: <input type="text" name="nombre" size="40"></p>
-            <p>Tipo de Sensor:
-                <input type="radio" name="tipo" value="temperatura"> Temperatura
-                <input type="radio" name="tipo" value="humedad"> Humedad
-            </p>
-
-
-            <p>Intervalo de Medicion <input type="number" name="intervalo" min="0"></p>
-            <p>Nivel de alerta <input type="number" name="alerta" min="0"></p>
-
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </p>
-        </form>
-
+        <h1> Menu principal </h1>
+        <br/>
+        <a href="registrarSensor.html" class="btn btn-success">Registrar Sensor</a>
+        <br/>
+        <br/>
+        <a href="registrarSensor.html" class="btn btn-success">Generar Reporte</a>
+        <br/>
+        <br/>
+        <a href="registrarSensor.html" class="btn btn-success">Registrar Alarma</a>
+        <br/>
+        <br/>
+        <a href="registrarSensor.html" class="btn btn-success">Mostrar datos de sensores</a>
+        <br/>
     </body>
 </html>
